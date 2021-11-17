@@ -2,6 +2,7 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 html, body {
@@ -210,43 +211,61 @@ html {
     display: none;
 }
 
-
-.search-navbar {
-    position: relative;
-    display: block;
+.search-container {
+    width: 100%;
     background: #232023;
-    /*overflow-y: hidden;*/
     height: 72px;
-
+    padding-top: 1rem;
 }
 
-.search-navbar input {
-    /*display: inline-block;*/
-    width: 1206px;
+.search-container .search-wrapper {
+    display: flex;
+    width: 100%;
+}
+
+.search-container .search-wrapper input {
+    display: block;
+    width: 76%;
+    margin-left: 10%;
     height: 42px;
     padding-left: 10px;
+    padding-right: 8px;
     color: red;
     font-size: 18px;
     font-weight: bolder;
-    margin: 10px 153px;
-    border-radius: 5px;
     outline: none;
     border: none;
+
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+
 }
 
-.search-navbar input::placeholder {
+.search-container i {
+    color: red;
+    background: white;
+    min-width: 50px;
+    text-align: center;
+    padding-top: 12px;
+    cursor: pointer;
+    border-left: 1px solid rgba(128, 128, 128, 0.45);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.search-container input::placeholder {
     font-size: 20px;
     font-weight: bold;
     padding-left: 10px;
 
 }
 
-.search-navbar input:focus::placeholder {
+.search-container input:focus::placeholder {
     color: transparent;
 
 }
 
-.search-navbar input::placeholder {
+.search-container input::placeholder {
     font-size: 20px;
     font-weight: bolder;
     /*padding: 5%;*/
@@ -515,8 +534,7 @@ footer .footer-section h2 {
 }
 
 .footer-section {
-    margin-top: 6rem;
-    margin-left: 8rem;
+    margin: 4.5rem;
 }
 
 footer ul {
@@ -550,24 +568,6 @@ footer ul li a:hover {
     font-size: 50px;
     color: black;
 
-}
-
-
-#navbar-search-icon {
-    width: 50px;
-    height: 50%;
-    text-align: center;
-    /*background: rgba(85, 85, 85, 0.91);*/
-
-    position: absolute;
-    color: red;
-    right: 217px;
-    top: 20%;
-    border-left: 1px solid rgba(128, 128, 128, 0.45);
-}
-
-#navbar-search-icon i {
-    padding-top: 8px;
 }
 
 
