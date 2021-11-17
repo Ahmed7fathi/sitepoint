@@ -1,26 +1,26 @@
-/*body{*/
-/*    height: 1200px;*/
-/*}*/
+html {
+  scroll-behavior: smooth;
+}
 
 
-*{
+* {
     padding: 0;
     margin: 0;
 }
 
-.logo{
+.logo {
     padding-top: 10px;
     fill: white;
     cursor: pointer;
+    transition: .4s all ease-in-out;
 }
-.logo:hover{
+
+.logo:hover {
     fill: red;
 }
 
 
-
-
-.navbar{
+.navbar {
     background: #232023;
     overflow-y: hidden;
     height: 72px;
@@ -28,45 +28,55 @@
     top: 0;
     z-index: 3;
 }
-.navbar .nav-left{
+
+.navbar .nav-left {
     float: left;
 }
-.navbar .nav-right{
+
+.navbar .nav-right {
     float: right;
     padding-top: 2%;
 }
-.navbar ul{
+
+.navbar ul {
     padding-top: 1%;
     margin-left: 10%;
     margin-right: 5%;
 
 }
-.navbar ul li{
+
+.navbar ul li {
     display: inline;
     list-style: none;
 
 }
-.navbar ul li a{
+
+.navbar ul li a {
     text-decoration: none;
     padding: 10px;
     color: white;
     font-size: 20px;
     letter-spacing: 2px;
     font-weight: bold;
+    transition: .5s all ease-in-out;
 
 }
+
 .navbar ul li:not(:last-child) a:hover {
 
     /*color: #ff69b4;    !* hot pink *!*/
-    color: #40e0d0;     /* turquoise */
+    color: #40e0d0; /* turquoise */
 
 
 }
-.navbar ul li:last-child a{
+
+.navbar ul li:last-child a {
     background: #FA3292;
     /*border-radius: 5px;*/
+    transition: .5s all ease-in-out;
 }
-.navbar ul li:last-child a:hover{
+
+.navbar ul li:last-child a:hover {
     background: #232023;
     outline: 1px solid #FA3292;
     border-radius: 10px;
@@ -74,14 +84,11 @@
 }
 
 
-
-
-
-.center{
+.center {
     margin-left: 10%;
 }
 
-.top-section{
+.top-section {
     position: relative;
     height: 420px;
     /*background: green;*/
@@ -95,8 +102,7 @@
 }
 
 
-
-.search{
+.search {
     margin: 80px 200px;
     height: 55px;
     width: 75%;
@@ -104,75 +110,79 @@
     border-radius: 300px;
     border: none;
     outline: none;
-    text-indent:20px;
+    text-indent: 20px;
 
-     font-size: 20px;
+    font-size: 20px;
     font-weight: bolder;
 
 }
-.search:focus::placeholder{
+
+.search:focus::placeholder {
     color: transparent;
 
 }
-.search::placeholder{
+
+.search::placeholder {
     font-size: 20px;
     font-weight: bolder;
     /*padding: 5%;*/
 }
 
 
-
-.menu{
+.menu {
     list-style: none;
     position: relative;
     left: 16%;
     z-index: 1;
 
 }
-.menu li{
+
+.menu li {
     display: inline-block;
     padding: 20px;
     border-top-right-radius: 7px;
     border-top-left-radius: 7px;
 
 }
-.menu li:hover{
+
+.menu li:hover {
     background: black;
 
 }
-.menu  a{
+
+.menu a {
     text-decoration: none;
     /*color: white;*/
-        color: yellow;
+    color: yellow;
 
     font-size: 20px;
     font-weight: 1000;
-    -webkit-animation:myfirst 3s infinite; /* Safari and Chrome */
+    -webkit-animation: myfirst 3s infinite; /* Safari and Chrome */
 
 
 }
 
 
-
-
-@-webkit-keyframes myfirst
-{
-  /*0%   {background:red;}*/
-    0%  {color:yellow;}
-    50%  {color:#40e0d0;}
+@-webkit-keyframes myfirst {
+    /*0%   {background:red;}*/
+    0% {
+        color: yellow;
+    }
+    50% {
+        color: #40e0d0;
+    }
     /*80%   {color:white;}*/
-    100%  {color: white ;}
+    100% {
+        color: white;
+    }
 }
 
 
-
-
-
-.submenu{
+.submenu {
     display: none;
 }
 
-.menu li:hover .submenu{
+.menu li:hover .submenu {
     display: inline;
     position: absolute;
     top: 80%;
@@ -185,16 +195,16 @@
     border-bottom-left-radius: 18px;
 }
 
-.submenu li a:hover{
+.submenu li a:hover {
     color: #fe7934;
 }
 
-.hide{
+.hide {
     display: none;
 }
 
 
-.search-navbar{
+.search-navbar {
     position: relative;
     display: block;
     background: #232023;
@@ -202,38 +212,41 @@
     height: 72px;
 
 }
-.search-navbar input{
+
+.search-navbar input {
     /*display: inline-block;*/
     width: 1206px;
     height: 42px;
     padding-left: 10px;
     color: red;
-    font-size:  18px;
+    font-size: 18px;
     font-weight: bolder;
     margin: 10px 153px;
     border-radius: 5px;
     outline: none;
     border: none;
 }
-.search-navbar input::placeholder{
+
+.search-navbar input::placeholder {
     font-size: 20px;
     font-weight: bold;
     padding-left: 10px;
 
 }
-.search-navbar input:focus::placeholder{
+
+.search-navbar input:focus::placeholder {
     color: transparent;
 
 }
-.search-navbar input::placeholder{
+
+.search-navbar input::placeholder {
     font-size: 20px;
     font-weight: bolder;
     /*padding: 5%;*/
 }
 
 
-
-.middle-section{
+.middle-section {
     padding: 10px 0 50px 0;
     /*background: #00ac00;*/
     /*background: #3CBC8D;*/
@@ -245,23 +258,21 @@
     background-attachment: fixed;
 
 
-
-
 }
-.middle-section h1:first-child{
+
+.middle-section h1:first-child {
     color: #FFFF;
     padding: 20px;
 }
 
 
-
-.card{
+.card {
     display: inline-block;
-    position:relative;
+    position: relative;
     top: 0;
     margin-left: 20px;
     margin-top: 18px;
-    border: 1px solid  gray;
+    border: 1px solid gray;
     background: #FFFF;
     height: 360px;
     max-width: 300px;
@@ -272,18 +283,21 @@
 
 
 }
-.card:hover{
+
+.card:hover {
     top: -10px;
     transition: top .5s ease;
 
 }
-.card img{
+
+.card img {
     min-width: 300px;
     max-width: 300px;
     max-height: 157px;
 
 }
-.card .card-title{
+
+.card .card-title {
     display: block;
     padding: 10px;
     text-decoration: none;
@@ -299,18 +313,21 @@
     /*text-overflow: ellipsis;*/
     /*max-width: 200px;*/
 }
-.card .card-title:hover{
+
+.card .card-title:hover {
     text-decoration: underline;
     color: black;
     text-decoration-color: red;
 }
-.card ul{
+
+.card ul {
     position: absolute;
     left: 11%;
     list-style: none;
 }
+
 .card ul li::before {
-    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
     color: red; /* Change the color */
     font-weight: bolder; /* If you want it to be bold */
     display: inline-block; /* Needed to add space between the bullet and the text */
@@ -318,12 +335,14 @@
     margin-left: -1em; /* Also needed for space (tweak if needed) */
 
 }
-.card ul li a{
+
+.card ul li a {
     color: #111111;
     text-decoration: none;
 
 }
-.card ul li a:hover{
+
+.card ul li a:hover {
     color: black;
     font-weight: bolder;
     /*text-decoration: underline;*/
@@ -332,40 +351,51 @@
 }
 
 
-
-
-
-.recent-section{
+.recent-section {
     position: relative;
-    padding: 20px 0 350px 0;
+    padding: 1.4rem 0 15rem 0;
     min-height: 500px;
 }
-.recent-section .topic{
+
+.recent-section .topic {
     position: relative;
     padding-top: 20px;
+    display: flex;
 }
-.recent-section .topic-title{
+
+.recent-section .topic-title {
     padding-bottom: 15px;
 }
-.recent-section .topic-title a{
+
+.recent-section .topic-title a {
     color: black;
 
 }
-.recent-section .topic-title a:hover{
+
+.recent-section .topic-title a:hover {
     color: turquoise;
 }
-.recent-section .topic-image{
+
+.recent-section .topic-image {
     max-width: 200px;
     min-height: 170px;
 }
-.recent-section .topic-content{
+
+.recent-section .topic-body {
+    margin-left: 1.55rem;
+    margin-right: 1rem;
+    width: 95%;
+}
+
+.recent-section .topic-content {
     padding-top: 15px;
     font-weight: lighter;
     word-spacing: 3px;
 
 }
-.recent-section .topic li:before{
-    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+
+.recent-section .topic li:before {
+    content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
     color: green; /* Change the color */
     font-weight: bolder; /* If you want it to be bold */
     display: inline-block; /* Needed to add space between the bullet and the text */
@@ -374,111 +404,133 @@
 
 
 }
-.recent-section ul li a{
+
+.recent-section ul li a {
     color: red;
     text-decoration: none;
 
 }
-.recent-section .author a{
+
+.recent-section .author a {
     color: dodgerblue;
 }
-.recent-section ul li a:hover{
+
+.recent-section ul li a:hover {
     color: #5557ff;
     text-decoration: underline;
 
 }
-.recent-section .topic-body{
-    position: absolute;
+
+.recent-section .topic-body {
     top: 7%;
     left: 16%;
     max-width: 600px;
 
 
 }
-.recent-section .topic-body ul li{
+
+.recent-section .topic-body ul li {
     display: inline;
     padding: 10px;
     list-style: disc;
 
 }
 
-
-
-
-.pag ul{
-    position: absolute;
-    top: 80%;
-    left: 35%;
+.pag{
+    margin-top: 7rem;
+    margin-right: 10%;
 }
-.pag ul li{
+.pag ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pag ul li {
     display: inline;
     padding: 10px 20px;
-    border: 1px solid gray;
+    margin: .25rem;
+    border: 1px solid #e4e4e4;
     border-radius: 3px;
     background: rgba(233, 233, 233, 0.1);
 }
-.pag ul li:first-child{
-    background: #949494;
+
+.pag ul li:first-child {
+    background: #ff462e;
 }
-.pag ul li:first-child a{
+
+.pag ul li:first-child a {
     color: white;
 }
-.pag ul li:hover{
-    background: #c2c2c2;
+
+.pag ul li:hover {
+    background: rgba(255, 70, 46, 0.72);
     cursor: pointer;
 }
-.pag ul li:hover a{
+
+.pag ul li:hover a {
     color: white;
     cursor: pointer;
 
 }
-.pag ul li a{
+
+.pag ul li a {
     cursor: default;
     color: red;
     font-size: 20px;
     font-weight: bold;
 }
-.pag ul li a:hover{
+
+.pag ul li a:hover {
     color: white;
     text-decoration: none;
 }
 
 
-
-
-footer{
+footer {
+    display: flex;
+    flex-wrap: wrap;
     background: #3D383E;
-    height: 400px;
-    padding: 30px;
+    padding: 2.5rem 0 8.55rem;
+
 }
-footer .footer-section h2{
+
+footer .footer-section h2 {
     color: white;
 }
-.footer-section{
-    float: left;
-    padding-left: 170px;
+
+.footer-section {
+    margin-top: 6rem;
+    margin-left: 8rem;
 }
-footer ul{
+
+footer ul {
     padding-top: 20px;
 }
-footer ul li{
+
+footer ul li {
     padding: 5px;
 }
-footer ul li a{
+
+footer ul li a {
     color: #949494;
     font-size: 20px;
     text-decoration: none;
+    transition: .2s all ease-in-out;
 }
-footer ul li a:hover{
+
+footer ul li a:hover {
     color: turquoise;
     text-decoration: underline;
 
 }
-.footer-section:last-child{
+
+.footer-section:last-child {
     padding-top: 10px;
 
 }
-.footer-section:last-child i{
+
+.footer-section:last-child i {
     padding: 10px;
     font-size: 50px;
     color: black;
@@ -486,11 +538,7 @@ footer ul li a:hover{
 }
 
 
-
-
-
-
-#navbar-search-icon{
+#navbar-search-icon {
     width: 50px;
     height: 50%;
     text-align: center;
@@ -502,13 +550,13 @@ footer ul li a:hover{
     top: 20%;
     border-left: 1px solid rgba(128, 128, 128, 0.45);
 }
-#navbar-search-icon i{
-    padding-top: 8px;
 
+#navbar-search-icon i {
+    padding-top: 8px;
 }
 
 
-#top-search-icon{
+#top-search-icon {
     display: block;
     width: 61px;
     height: 50px;
@@ -518,9 +566,9 @@ footer ul li a:hover{
     right: 206px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-
     border-left: 1px solid red;
 }
-#top-search-icon i{
+
+#top-search-icon i {
     padding: 16px 0 0 30px;
 }
