@@ -17,6 +17,7 @@ html {
 
 
 .logo {
+    height: 45px;
     padding-top: 10px;
     fill: white;
     cursor: pointer;
@@ -29,32 +30,40 @@ html {
 
 
 .navbar {
-    background: #232023;
-    overflow-y: hidden;
-    height: 72px;
     position: sticky;
     top: 0;
-    z-index: 3;
+    max-height: 220px;
+    background: #232023;
+    z-index: 1;
+    overflow-x: hidden;
+
 }
 
-.navbar .nav-left {
-    float: left;
+.navbar .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    width: 91%;
+    margin: 0 auto;
+    padding: .5% 1.2%;
+
 }
 
-.navbar .nav-right {
-    float: right;
-    padding-top: 2%;
+.navbar .container .nav-left {
+    margin-left: 5%;
+
 }
 
-.navbar ul {
+.navbar .container .nav-right {
+    display: flex;
+    flex-wrap: wrap;
     padding-top: 1%;
-    margin-left: 10%;
-    margin-right: 5%;
-
 }
+
 
 .navbar ul li {
-    display: inline;
+    display: inline-block;
     list-style: none;
 
 }
@@ -92,6 +101,68 @@ html {
 }
 
 
+.search-container {
+    width: 100%;
+    background: #232023;
+    height: 72px;
+    padding-top: 1rem;
+}
+
+.search-container .search-wrapper {
+    display: flex;
+    width: 91%;
+    margin: 0 auto;
+}
+
+.search-container .search-wrapper input {
+    display: block;
+    width: 76%;
+    margin-left: 10%;
+    height: 42px;
+    padding-left: 10px;
+    padding-right: 8px;
+    color: red;
+    font-size: 18px;
+    font-weight: bolder;
+    outline: none;
+    border: none;
+
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+}
+
+.search-container i {
+    color: red;
+    background: white;
+    min-width: 50px;
+    text-align: center;
+    padding-top: 12px;
+    cursor: pointer;
+    border-left: 1px solid rgba(128, 128, 128, 0.45);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.search-container input::placeholder {
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 10px;
+
+}
+
+.search-container input:focus::placeholder {
+    color: transparent;
+
+}
+
+.search-container input::placeholder {
+    font-size: 20px;
+    font-weight: bolder;
+    /*padding: 5%;*/
+}
+
+
 .center {
     margin-left: 6%;
 }
@@ -99,8 +170,6 @@ html {
 .top-section {
     position: relative;
     height: 420px;
-    /*background: green;*/
-    /*background: #b83b5e;*/
     overflow: hidden;
 
 
@@ -114,7 +183,6 @@ html {
     margin: 80px 200px;
     height: 55px;
     width: 75%;
-    /*padding: 15px 500px;*/
     border-radius: 300px;
     border: none;
     outline: none;
@@ -122,7 +190,6 @@ html {
 
     font-size: 20px;
     font-weight: bolder;
-
 }
 
 .search:focus::placeholder {
@@ -138,11 +205,9 @@ html {
 
 
 .menu {
-    list-style: none;
     position: relative;
+    list-style: none;
     left: 16%;
-    z-index: 1;
-
 }
 
 .menu li {
@@ -209,66 +274,6 @@ html {
 
 .hide {
     display: none;
-}
-
-.search-container {
-    width: 100%;
-    background: #232023;
-    height: 72px;
-    padding-top: 1rem;
-}
-
-.search-container .search-wrapper {
-    display: flex;
-    width: 100%;
-}
-
-.search-container .search-wrapper input {
-    display: block;
-    width: 76%;
-    margin-left: 10%;
-    height: 42px;
-    padding-left: 10px;
-    padding-right: 8px;
-    color: red;
-    font-size: 18px;
-    font-weight: bolder;
-    outline: none;
-    border: none;
-
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-
-}
-
-.search-container i {
-    color: red;
-    background: white;
-    min-width: 50px;
-    text-align: center;
-    padding-top: 12px;
-    cursor: pointer;
-    border-left: 1px solid rgba(128, 128, 128, 0.45);
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-}
-
-.search-container input::placeholder {
-    font-size: 20px;
-    font-weight: bold;
-    padding-left: 10px;
-
-}
-
-.search-container input:focus::placeholder {
-    color: transparent;
-
-}
-
-.search-container input::placeholder {
-    font-size: 20px;
-    font-weight: bolder;
-    /*padding: 5%;*/
 }
 
 

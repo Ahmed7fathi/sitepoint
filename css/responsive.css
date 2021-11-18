@@ -1,5 +1,22 @@
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 0px) and (max-device-width: 480px) {
+    .navbar{
+        height: 175px;
+    }
+    .navbar .container .nav-right {
+        display: flex;
+        /*flex-direction: column;*/
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .nav-right li{
+        margin-top: 5px;
+    }
+     .nav-right li:last-child a{
+        margin-top: 6px;
+         display: block;
+         margin-bottom: 10px;
+    }
 
     .search-container .search-wrapper input {
         font-size: 18px;
