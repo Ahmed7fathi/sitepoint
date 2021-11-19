@@ -17,6 +17,7 @@ html {
 /*   NAVBAR SECTION */
 .logo {
     height: 45px;
+    width: 150px;
     padding-top: 10px;
     fill: white;
     cursor: pointer;
