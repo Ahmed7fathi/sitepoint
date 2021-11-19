@@ -45,6 +45,10 @@
                 </svg>
             </li>
         </ul>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <label for="nav-toggle" class="nav-toggle-label">
+            <i class="fas fa-bars"></i>
+        </label>
         <ul class="nav-right">
             <li><a href="#">Blog</a></li>
             <li><a href="#">Community</a></li>
@@ -52,140 +56,140 @@
             <li><a href="#">Login</a></li>
             <li><a href="#">Join Premium</a></li>
         </ul>
+        <div class="search-container">
+            <div class="search-wrapper">
+                <input type="text" placeholder="Search thousands of developer tutorials">
+                <i class="fas fa-search"></i>
+            </div>
+        </div>
     </div>
 </nav>
-<div class="search-container">
-    <div class="search-wrapper">
-        <input type="text" placeholder="Search thousands of developer tutorials">
-        <i class="fas fa-search"></i>
-    </div>
-</div>
 
 <div class="top-section">
-        <div class="top-search-container">
-            <input class="search" type="text" placeholder="Find cool stuff">
-            <i id="top-search-icon" class="fas fa-search"></i>
-        </div>
+    <div class="top-search-container">
+        <input class="search" type="text" placeholder="Find cool stuff">
+        <i id="top-search-icon" class="fas fa-search"></i>
+    </div>
 
-        <ul class="menu">
-            <li>
-                <a href="#">HTML&CSS</a>
-                <ul class="submenu">
-                    <li><a href="#">Animation</a></li>
-                    <li><a href="#" data-category="Audio &amp; Video">Audio &amp; Video</a></li>
-                    <li><a href="#" data-category="Bootstrap">Bootstrap</a></li>
-                    <li><a href="#" data-category="Canvas &amp; SVG">Canvas &amp; SVG</a></li>
-                    <li><a href="#" data-category="CSS">CSS</a></li>
-                    <li><a href="#" data-category="CSS Architecture">CSS Architecture</a></li>
-                    <li><a href="#" data-category="Frameworks">Frameworks</a></li>
-                    <li><a href="#" data-category="HTML">HTML</a></li>
-                    <li><a href="#" data-category="Sass">Sass</a></li>
-                    <li><a href="#" data-category="Web Fonts">Web Fonts</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">JAVASCRIPT</a>
-                <ul class="submenu">
-                    <li><a href="" data-category="Ajax">Ajax</a></li>
-                    <li><a href="#">AngularJS</a></li>
-                    <li><a href="#">APIs</a></li>
-                    <li><a href="#">ES6</a></li>
-                    <li><a href="#">jQuery</a></li>
-                    <li><a href="#">Node.js</a></li>
-                    <li><a href="#">npm</a></li>
-                    <li><a href="#">Raw JavaScript</a></li>
-                    <li><a href="#">React</a></li>
-                    <li><a href="#">Tools &amp;
-                        Libraries</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">MOBILE</a>
-                <ul class="submenu">
-                    <li><a href="#">Android</a></li>
-                    <li><a href="#">App Development</a></li>
-                    <li><a href="#">Firefox OS</a></li>
-                    <li><a href="#">Internet of Things</a></li>
-                    <li><a href="#">iOS</a></li>
-                    <li><a href="#">Mobile Web Development</a></li>
-                    <li><a href="#">Mobile UX</a></li>
-                    <li><a href="#">Responsive Web Design</a></li>
-                    <li><a href="#">Wearables</a></li>
-                    <li><a href="#">Windows Phone</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">ENTREPRENEUR</a>
-                <ul class="submenu">
-                    <li><a href="#">Accessibility</a></li>
-                    <li><a href="#">Animation</a></li>
-                    <li><a href="#">Color</a></li>
-                    <li><a href="#">Copywriting</a></li>
-                    <li><a href="#">HTML &amp; CSS</a></li>
-                    <li><a href="#">Illustration</a></li>
-                    <li><a href="#">Layout</a></li>
-                    <li><a href="#">Logo Design</a></li>
-                    <li><a href="#">Mobile Design</a></li>
-                    <li><a href="#">Performance</a></li>
-                    <li><a href="#">Photography &amp;
-                        Imagery</a></li>
-                    <li><a href="#">Photoshop</a></li>
-                    <li><a href="#">Prototypes &amp; Mockups</a>
-                    </li>
-                    <li><a href="#">Sketch</a></li>
-                    <li><a href="#">Typography</a></li>
-                    <li><a href="#">UI Design</a></li>
-                    <li><a href="#">UX</a></li>
+    <ul class="menu">
+        <li>
+            <a href="#">HTML&CSS</a>
+            <ul class="submenu">
+                <li><a href="#">Animation</a></li>
+                <li><a href="#" data-category="Audio &amp; Video">Audio &amp; Video</a></li>
+                <li><a href="#" data-category="Bootstrap">Bootstrap</a></li>
+                <li><a href="#" data-category="Canvas &amp; SVG">Canvas &amp; SVG</a></li>
+                <li><a href="#" data-category="CSS">CSS</a></li>
+                <li><a href="#" data-category="CSS Architecture">CSS Architecture</a></li>
+                <li><a href="#" data-category="Frameworks">Frameworks</a></li>
+                <li><a href="#" data-category="HTML">HTML</a></li>
+                <li><a href="#" data-category="Sass">Sass</a></li>
+                <li><a href="#" data-category="Web Fonts">Web Fonts</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">JAVASCRIPT</a>
+            <ul class="submenu">
+                <li><a href="" data-category="Ajax">Ajax</a></li>
+                <li><a href="#">AngularJS</a></li>
+                <li><a href="#">APIs</a></li>
+                <li><a href="#">ES6</a></li>
+                <li><a href="#">jQuery</a></li>
+                <li><a href="#">Node.js</a></li>
+                <li><a href="#">npm</a></li>
+                <li><a href="#">Raw JavaScript</a></li>
+                <li><a href="#">React</a></li>
+                <li><a href="#">Tools &amp;
+                    Libraries</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">MOBILE</a>
+            <ul class="submenu">
+                <li><a href="#">Android</a></li>
+                <li><a href="#">App Development</a></li>
+                <li><a href="#">Firefox OS</a></li>
+                <li><a href="#">Internet of Things</a></li>
+                <li><a href="#">iOS</a></li>
+                <li><a href="#">Mobile Web Development</a></li>
+                <li><a href="#">Mobile UX</a></li>
+                <li><a href="#">Responsive Web Design</a></li>
+                <li><a href="#">Wearables</a></li>
+                <li><a href="#">Windows Phone</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">ENTREPRENEUR</a>
+            <ul class="submenu">
+                <li><a href="#">Accessibility</a></li>
+                <li><a href="#">Animation</a></li>
+                <li><a href="#">Color</a></li>
+                <li><a href="#">Copywriting</a></li>
+                <li><a href="#">HTML &amp; CSS</a></li>
+                <li><a href="#">Illustration</a></li>
+                <li><a href="#">Layout</a></li>
+                <li><a href="#">Logo Design</a></li>
+                <li><a href="#">Mobile Design</a></li>
+                <li><a href="#">Performance</a></li>
+                <li><a href="#">Photography &amp;
+                    Imagery</a></li>
+                <li><a href="#">Photoshop</a></li>
+                <li><a href="#">Prototypes &amp; Mockups</a>
+                </li>
+                <li><a href="#">Sketch</a></li>
+                <li><a href="#">Typography</a></li>
+                <li><a href="#">UI Design</a></li>
+                <li><a href="#">UX</a></li>
 
-                </ul>
-            </li>
-            <li>
-                <a href="#">WEB</a>
-                <ul class="submenu">
-                    <li><a href="#">APIs</a></li>
-                    <li><a href="#">Browsers</a></li>
-                    <li><a href="#">CMS</a></li>
-                    <li><a href="#">Community</a></li>
-                    <li><a href="#">Docker</a></li>
-                    <li><a href="#">News</a></li>
-                    <li><a href="#">Operating Systems</a></li>
-                    <li><a href="#">Performance</a></li>
-                    <li><a href="#">Programming</a></li>
-                    <li><a href="#">Software</a></li>
-                    <li><a href="#">Web Hosting &amp; Domains</a></li>
-                    <li><a href="#">Web Security</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">WORDPRESS</a>
-                <ul class="submenu">
-                    <li><a href="#">Performance</a></li>
-                    <li><a href="#">Plugins</a></li>
-                    <li><a href="#">Security</a></li>
-                    <li><a href="#">Themes</a></li>
-                    <li><a href="#">WP API</a></li>
-                </ul>
+            </ul>
+        </li>
+        <li>
+            <a href="#">WEB</a>
+            <ul class="submenu">
+                <li><a href="#">APIs</a></li>
+                <li><a href="#">Browsers</a></li>
+                <li><a href="#">CMS</a></li>
+                <li><a href="#">Community</a></li>
+                <li><a href="#">Docker</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Operating Systems</a></li>
+                <li><a href="#">Performance</a></li>
+                <li><a href="#">Programming</a></li>
+                <li><a href="#">Software</a></li>
+                <li><a href="#">Web Hosting &amp; Domains</a></li>
+                <li><a href="#">Web Security</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">WORDPRESS</a>
+            <ul class="submenu">
+                <li><a href="#">Performance</a></li>
+                <li><a href="#">Plugins</a></li>
+                <li><a href="#">Security</a></li>
+                <li><a href="#">Themes</a></li>
+                <li><a href="#">WP API</a></li>
+            </ul>
 
-            </li>
-            <li>
-                <a href="#">PHP</a>
-                <ul class="submenu">
-                    <li><a href="#">APIs</a></li>
-                    <li><a href="#">Database</a></li>
-                    <li><a href="#">Debugging &amp;
-                        Deployment</a></li>
-                    <li><a href="#">Development Environment</a>
-                    </li>
-                    <li><a href="#">Drupal</a></li>
-                    <li><a href="#">Frameworks</a></li>
-                    <li><a href="#">Laravel</a></li>
-                    <li><a href="#">Patterns &amp; Practices</a></li>
-                    <li><a href="#">Performance &amp; Scaling</a>
-                    </li>
-                    <li><a href="#">Security</a></li>
-                </ul>
-            </li>
-        </ul>
+        </li>
+        <li>
+            <a href="#">PHP</a>
+            <ul class="submenu">
+                <li><a href="#">APIs</a></li>
+                <li><a href="#">Database</a></li>
+                <li><a href="#">Debugging &amp;
+                    Deployment</a></li>
+                <li><a href="#">Development Environment</a>
+                </li>
+                <li><a href="#">Drupal</a></li>
+                <li><a href="#">Frameworks</a></li>
+                <li><a href="#">Laravel</a></li>
+                <li><a href="#">Patterns &amp; Practices</a></li>
+                <li><a href="#">Performance &amp; Scaling</a>
+                </li>
+                <li><a href="#">Security</a></li>
+            </ul>
+        </li>
+    </ul>
 </div>
 
 <div class="middle-section">
