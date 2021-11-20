@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-html, body {
+html {
     height: 100%;
     width: 100%;
     overflow-x: hidden;
@@ -87,13 +87,13 @@ html {
 
 }
 
-.navbar ul li:last-child a {
+.navbar ul.nav-right li:last-child a {
     background: #FA3292;
     /*border-radius: 5px;*/
     transition: .5s all ease-in-out;
 }
 
-.navbar ul li:last-child a:hover {
+.navbar ul.nav-right li:last-child a:hover {
     background: #232023;
     outline: 1px solid #FA3292;
     border-radius: 10px;
@@ -110,6 +110,8 @@ html {
     background: #232023;
     height: 72px;
     padding-top: 1rem;
+    transition: .5s all ease-in-out;
+    overflow: hidden;
 }
 
 .search-container .search-wrapper {
@@ -297,10 +299,6 @@ html {
 
 .submenu li a:hover {
     color: #fe7934;
-}
-
-.hide {
-    display: none;
 }
 
 /*   END OF TOP SECTION */
@@ -606,4 +604,10 @@ footer ul li a:hover {
 
 .center {
     margin-left: 6%;
+}
+
+.hide {
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
 }
